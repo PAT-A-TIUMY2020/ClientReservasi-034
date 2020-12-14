@@ -33,17 +33,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.textBoxID = new System.Windows.Forms.TextBox();
+            this.textBoxNama = new System.Windows.Forms.TextBox();
+            this.textBoxNoTlf = new System.Windows.Forms.TextBox();
+            this.textBoxJumlah = new System.Windows.Forms.TextBox();
+            this.textBoxIDLokasi = new System.Windows.Forms.TextBox();
+            this.dtPemesanan = new System.Windows.Forms.DataGridView();
+            this.btSimpan = new System.Windows.Forms.Button();
+            this.btUpdate = new System.Windows.Forms.Button();
+            this.btHapus = new System.Windows.Forms.Button();
+            this.btClear = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtPemesanan)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -91,101 +91,106 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "ID Lokasi";
             // 
-            // textBox1
+            // textBoxID
             // 
-            this.textBox1.Location = new System.Drawing.Point(241, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 22);
-            this.textBox1.TabIndex = 5;
+            this.textBoxID.Location = new System.Drawing.Point(241, 52);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(340, 22);
+            this.textBoxID.TabIndex = 5;
             // 
-            // textBox2
+            // textBoxNama
             // 
-            this.textBox2.Location = new System.Drawing.Point(241, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(340, 22);
-            this.textBox2.TabIndex = 6;
+            this.textBoxNama.Location = new System.Drawing.Point(241, 90);
+            this.textBoxNama.Name = "textBoxNama";
+            this.textBoxNama.Size = new System.Drawing.Size(340, 22);
+            this.textBoxNama.TabIndex = 6;
             // 
-            // textBox3
+            // textBoxNoTlf
             // 
-            this.textBox3.Location = new System.Drawing.Point(241, 130);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(340, 22);
-            this.textBox3.TabIndex = 7;
+            this.textBoxNoTlf.Location = new System.Drawing.Point(241, 130);
+            this.textBoxNoTlf.Name = "textBoxNoTlf";
+            this.textBoxNoTlf.Size = new System.Drawing.Size(340, 22);
+            this.textBoxNoTlf.TabIndex = 7;
             // 
-            // textBox4
+            // textBoxJumlah
             // 
-            this.textBox4.Location = new System.Drawing.Point(241, 168);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(340, 22);
-            this.textBox4.TabIndex = 8;
+            this.textBoxJumlah.Location = new System.Drawing.Point(241, 168);
+            this.textBoxJumlah.Name = "textBoxJumlah";
+            this.textBoxJumlah.Size = new System.Drawing.Size(340, 22);
+            this.textBoxJumlah.TabIndex = 8;
             // 
-            // textBox5
+            // textBoxIDLokasi
             // 
-            this.textBox5.Location = new System.Drawing.Point(241, 208);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(340, 22);
-            this.textBox5.TabIndex = 9;
+            this.textBoxIDLokasi.Location = new System.Drawing.Point(241, 208);
+            this.textBoxIDLokasi.Name = "textBoxIDLokasi";
+            this.textBoxIDLokasi.Size = new System.Drawing.Size(340, 22);
+            this.textBoxIDLokasi.TabIndex = 9;
             // 
-            // dataGridView1
+            // dtPemesanan
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(88, 288);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(616, 150);
-            this.dataGridView1.TabIndex = 10;
+            this.dtPemesanan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtPemesanan.Location = new System.Drawing.Point(88, 288);
+            this.dtPemesanan.Name = "dtPemesanan";
+            this.dtPemesanan.RowTemplate.Height = 24;
+            this.dtPemesanan.Size = new System.Drawing.Size(616, 150);
+            this.dtPemesanan.TabIndex = 10;
+            this.dtPemesanan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtPemesanan_CellClick);
             // 
-            // button1
+            // btSimpan
             // 
-            this.button1.Location = new System.Drawing.Point(629, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Simpan";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btSimpan.Location = new System.Drawing.Point(629, 66);
+            this.btSimpan.Name = "btSimpan";
+            this.btSimpan.Size = new System.Drawing.Size(75, 23);
+            this.btSimpan.TabIndex = 11;
+            this.btSimpan.Text = "Simpan";
+            this.btSimpan.UseVisualStyleBackColor = true;
+            this.btSimpan.Click += new System.EventHandler(this.btSimpan_Click);
             // 
-            // button2
+            // btUpdate
             // 
-            this.button2.Location = new System.Drawing.Point(629, 110);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btUpdate.Location = new System.Drawing.Point(629, 110);
+            this.btUpdate.Name = "btUpdate";
+            this.btUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btUpdate.TabIndex = 12;
+            this.btUpdate.Text = "Update";
+            this.btUpdate.UseVisualStyleBackColor = true;
+            this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
             // 
-            // button3
+            // btHapus
             // 
-            this.button3.Location = new System.Drawing.Point(629, 152);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Hapus";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btHapus.Location = new System.Drawing.Point(629, 152);
+            this.btHapus.Name = "btHapus";
+            this.btHapus.Size = new System.Drawing.Size(75, 23);
+            this.btHapus.TabIndex = 13;
+            this.btHapus.Text = "Hapus";
+            this.btHapus.UseVisualStyleBackColor = true;
+            this.btHapus.Click += new System.EventHandler(this.btHapus_Click);
             // 
-            // button4
+            // btClear
             // 
-            this.button4.Location = new System.Drawing.Point(629, 193);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Clear";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btClear.Location = new System.Drawing.Point(629, 193);
+            this.btClear.Name = "btClear";
+            this.btClear.Size = new System.Drawing.Size(75, 23);
+            this.btClear.TabIndex = 14;
+            this.btClear.Text = "Clear";
+            this.btClear.UseVisualStyleBackColor = true;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(807, 484);
+            this.Controls.Add(this.btClear);
+            this.Controls.Add(this.btHapus);
+            this.Controls.Add(this.btUpdate);
+            this.Controls.Add(this.btSimpan);
+            this.Controls.Add(this.dtPemesanan);
+            this.Controls.Add(this.textBoxIDLokasi);
+            this.Controls.Add(this.textBoxJumlah);
+            this.Controls.Add(this.textBoxNoTlf);
+            this.Controls.Add(this.textBoxNama);
+            this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -193,7 +198,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtPemesanan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,16 +212,16 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBoxID;
+        private System.Windows.Forms.TextBox textBoxNama;
+        private System.Windows.Forms.TextBox textBoxNoTlf;
+        private System.Windows.Forms.TextBox textBoxJumlah;
+        private System.Windows.Forms.TextBox textBoxIDLokasi;
+        private System.Windows.Forms.DataGridView dtPemesanan;
+        private System.Windows.Forms.Button btSimpan;
+        private System.Windows.Forms.Button btUpdate;
+        private System.Windows.Forms.Button btHapus;
+        private System.Windows.Forms.Button btClear;
     }
 }
 
